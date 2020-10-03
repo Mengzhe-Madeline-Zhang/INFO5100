@@ -1,4 +1,4 @@
-package info5100.assignment3.MengzheZhang;
+package info5100.assignment3.Question3;
 
 public class Professor {
 

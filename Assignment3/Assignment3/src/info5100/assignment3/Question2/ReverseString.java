@@ -1,4 +1,4 @@
-package info5100.assignment3.MengzheZhang;
+package info5100.assignment3.Question2;
 
 
 import java.util.Arrays;
@@ -6,7 +6,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class ReverseString {
-
 	public static void main(String[] args) {
 		String s = "  the   sky is blue  ";
 		  s=reverseString(s);

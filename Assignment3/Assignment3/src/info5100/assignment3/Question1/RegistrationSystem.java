@@ -1,11 +1,12 @@
-package info5100.assignment3.MengzheZhang;
+package info5100.assignment3.Question1;
 
 import java.util.ArrayList;
 
-public class RegistrationSystem {
 
+	class Main{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+	
       Student a = new Student("aa","1");
       Student b = new Student("bb","2");
       Student c = new Student("cc","3");
@@ -32,6 +33,7 @@ public class RegistrationSystem {
 	}
 
  }
+
 
 
  class Student{
@@ -92,7 +94,8 @@ public class RegistrationSystem {
 		}
 	
 	 }
- }
+  }
+ 
 
 /***
   Console Result
