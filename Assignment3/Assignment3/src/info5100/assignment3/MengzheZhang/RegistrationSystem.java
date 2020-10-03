@@ -1,40 +1,6 @@
-package info5100.assignment3.Question1;
+package info5100.assignment3.MengzheZhang;
 
 import java.util.ArrayList;
-
-
-	class Main{
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	
-      Student a = new Student("aa","1");
-      Student b = new Student("bb","2");
-      Student c = new Student("cc","3");
-      Student d = new Student("dd","4");
-      Student e = new Student("ee","5");
-      Student f = new Student("ff","6");
-      Student g = new Student("gg","7");
-      Student h = new Student("hh","8");
-      Student i = new Student("ii","9");
-      Student j = new Student("jj","10");
-      Student k = new Student("kk","11");
-      Course.registerStudent(a);
-      Course.registerStudent(b);
-      Course.registerStudent(c);
-      Course.registerStudent(d);
-      Course.registerStudent(e);
-      Course.registerStudent(f);
-      Course.registerStudent(g);
-      Course.registerStudent(h);
-      Course.registerStudent(i);
-      Course.registerStudent(j);
-      Course.registerStudent(k);
-      
-	}
-
- }
-
-
 
  class Student{
  String studentName;
@@ -67,6 +33,10 @@ import java.util.ArrayList;
 	 static int numberOfStudent=0;
 	 static ArrayList<Student> studentList= new ArrayList<Student>();
 	 
+public Course(String name) {
+	this.courseName = name;
+}
+	 
 	 static ArrayList<Student> getStudent(){
 		 return  studentList;
 	 }
@@ -83,7 +53,7 @@ import java.util.ArrayList;
 	 }
 	 
 
-	public static void registerStudent(Student student){
+	public void registerStudent(Student student){
 		if(!isFull()) {
 			studentList.add(student);
 			numberOfStudent++;

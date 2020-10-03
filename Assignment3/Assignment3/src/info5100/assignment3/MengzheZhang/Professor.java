@@ -1,4 +1,4 @@
-package info5100.assignment3.Question3;
+package info5100.assignment3.MengzheZhang;
 
 public class Professor {
 
@@ -48,11 +48,4 @@ public class Professor {
     }
 }
 
-class Main{
-	public static void main(String[] args) {
-		 Professor professor = new Professor.Builder("Tom", "Ford")
-				    .setPersonalId(123456).build();
 
-	}
-
-}
