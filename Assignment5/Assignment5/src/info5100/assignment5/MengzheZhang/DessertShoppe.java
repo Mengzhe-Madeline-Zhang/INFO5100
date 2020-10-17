@@ -13,7 +13,7 @@ public class DessertShoppe {
 			
 	}
 
-	  String cents2dollarsAndCents(int cents) {
+	  String cents2dollarsAndCents(double cents) {
 		 double dollars;
 		 dollars=cents/100;
 	     String dandc=Double.toString(dollars);

@@ -49,11 +49,12 @@ public class Checkout {
 		    String receipt = ds.StoreName+"\n-------------------------";
 		    System.out.println();
 		    for (int i=0; i< items.size(); i++) {
-				
-				System.out.println(items.get(i).getName()+"      "+ds.cents2dollarsAndCents(items.get(i).getCost()));
+				System.out.println();
+				System.out.println(items.get(i).getName()+" "+ds.cents2dollarsAndCents(items.get(i).getCost()));
 				
 			};
-		
+			System.out.println("Tax "+ ds.cents2dollarsAndCents(this.totalTax()));
+			System.out.println("Total Cost "+ ds.cents2dollarsAndCents(this.totalCost()+this.totalTax()));
 		return receipt;
 	}
 	
